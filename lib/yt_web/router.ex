@@ -17,7 +17,7 @@ defmodule YTWeb.Router do
   scope "/", YTWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", StartLive, :index
   end
 
   # Other scopes may use custom stacks.
