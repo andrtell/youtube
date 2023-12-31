@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+APP="youtube"
+
+podman -r ps --filter "label=application=$APP"
