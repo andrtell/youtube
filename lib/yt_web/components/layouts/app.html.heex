@@ -224,10 +224,7 @@
           class="-m-2.5 p-2.5 text-gray-700 lg:hidden"
           phx-click={
             %JS{}
-            |> JS.show(
-              to: "#mobile-sidebar-container", 
-              transition: "fade-in",
-              time: 500)
+            |> JS.show(to: "#mobile-sidebar-container")
             |> JS.show(
               to: "#mobile-sidebar",
               display: "flex",
@@ -240,7 +237,6 @@
             )
             |> JS.show(
               to: "#mobile-sidebar-backdrop",
-              display: "flex",
               time: 350,
               transition: {
                 "transition-opacity ease-linear duration-300",
