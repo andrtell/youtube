@@ -1,9 +1,11 @@
 defmodule YTWeb.StartLive do
   use YTWeb, :live_view
 
+  import YTWeb.NavComponents
+
   def render(assigns) do
     ~H"""
-    Startpage
+    Hello
     """
   end
 
